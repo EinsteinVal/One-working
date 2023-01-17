@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <meta name="author" content="http://webthemez.com" />
-<!-- css -->
+ 
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="css/jcarousel.css" rel="stylesheet" />
@@ -21,6 +21,7 @@
 </head>
 <body>
 <div id="wrapper">
+
 	<!-- start header -->
 		<header>
         <div class="navbar navbar-default navbar-static-top">
@@ -47,61 +48,94 @@
             </div>
         </div>
 	</header><!-- end header -->
-	<section id="inner-headline">
-	<div class="container">
+	
+    <div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">Tarifs</h2>
-			</div>
-		</div>
-	</div>
-	<section id="content">
-	<div class="container">
-		<!-- end divider -->
-		<div class="row">
-			<div class="col-lg-12">
-			</div>
-			<div class="col-lg-6">
-				<div class="pricing-box-item">
-					<div class="pricing-heading">
-						<h3><strong>Free</strong></h3>
-					</div>
-					<div class="pricing-terms">
-						<h6>Basic</h6>
-					</div>
-					<div class="pricing-container">
-						<ul>
-							<li><i class="icon-ok"></i> Mise en relation entre freelanceurs <br></li>
-						</ul>
-					</div>
-					<div class="pricing-action">
-						<a href="#" class="btn btn-medium"><i class="icon-bolt"></i> Gratuit</a>
-					</div>
+				<style>
+					* {
+					box-sizing: border-box;
+					}
+					
+					#myInput {
+					background-image: url('/css/searchicon.png');
+					background-position: 10px 12px;
+					background-repeat: no-repeat;
+					width: 100%;
+					font-size: 16px;
+					padding: 12px 20px 12px 40px;
+					border: 1px solid #ddd;
+					margin-bottom: 12px;
+					}
+					
+					#myUL {
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
+					}
+					
+					#myUL li a {
+					border: 1px solid #ddd;
+					margin-top: -1px; /* Prevent double borders */
+					background-color: #f6f6f6;
+					padding: 12px;
+					text-decoration: none;
+					font-size: 18px;
+					color: black;
+					display: block
+					}
+					
+					#myUL li a:hover:not(.header) {
+					background-color: #eee;
+					}
+					</style>
+					</head>
+					<body>
+					
+					<div class="aligncenter"><h1 class="aligncenter">Search here</h1></div>
+					
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+					
+					<ul id="myUL">
+					<li><a href="#">Designer(se) UX</a></li>
+					<li><a href="#">Designer(se) UI</a></li>
+					
+					<li><a href="#">Graphiste logo</a></li>
+					<li><a href="#">Graphiste identité</a></li>
+					
+					<li><a href="#">Developpeur(se) fullstack</a></li>
+					<li><a href="#">Developpeur(se) frontend</a></li>
+					<li><a href="#">Developpeur(se) backend</a></li>
+
+					<li><a href="#">Photographe</a></li>
+					<li><a href="#">Comptable</a></li>
+					<li><a href="#">Consultant(e)</a></li>
+
+					</ul>
+					
+					<script>
+					function myFunction() {
+						var input, filter, ul, li, a, i, txtValue;
+						input = document.getElementById("myInput");
+						filter = input.value.toUpperCase();
+						ul = document.getElementById("myUL");
+						li = ul.getElementsByTagName("li");
+						for (i = 0; i < li.length; i++) {
+							a = li[i].getElementsByTagName("a")[0];
+							txtValue = a.textContent || a.innerText;
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								li[i].style.display = "";
+							} else {
+								li[i].style.display = "none";
+							}
+						}
+					}
+					</script>
+				</body>
 				</div>
 			</div>
-			<div class="col-lg-6">
-				<div class="pricing-box-item">
-					<div class="pricing-heading">
-						<h3><strong>Premium</strong></h3>
-					</div>
-					<div class="pricing-terms">
-						<h6>Premium</h6>
-					</div>
-					<div class="pricing-container">
-						<ul>
-							<li><i class="icon-ok"></i> Mise en relation entre freelanceurs <br></li>
-							<li><i class="icon-ok"></i> Accès illimité aux formations</li>
-							<li><i class="icon-ok"></i> Accès illimité aux conférences</li>
-						</ul>
-					</div>
-					<div class="pricing-action">
-						<a href="#" class="btn btn-medium"><i class="icon-bolt"></i> 4€ / mois</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	</section>
+    </div>
+
 	<footer>
 	<div class="container">
 		<div class="row">
