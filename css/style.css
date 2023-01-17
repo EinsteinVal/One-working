@@ -86,7 +86,7 @@ header .navbar {
 }
 .navbar-default .navbar-brand{
 color: #D81265;
-background: #81c402;
+background: #F7D591;
 height: 114px;
 position: absolute;
 top: -28px;
@@ -294,7 +294,7 @@ header ul.nav li ul li ul {
 color: #F58A2E;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-color: #81c402;
+color: #F7D591;
 background-color: transparent;
 }
 
@@ -349,7 +349,7 @@ left:0px;
 right:0px;
 }
 .flex-caption {zoom: 1;
-bottom: 0; background-color: rgba(129, 196, 2, 0.65); color: #fff; margin: 0; padding: 10px 25px; position: absolute; left: 0; text-align: left;margin: 0 auto;right: 0px;display: inline;float: left;width: auto;text-align: center;}
+bottom: 0; background-color: rgba(247, 213, 145, 1); color: #fff; margin: 0; padding: 10px 25px; position: absolute; left: 0; text-align: left;margin: 0 auto;right: 0px;display: inline;float: left;width: auto;text-align: center;}
 .flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;font-size: 36px;}
 .flex-caption p {margin: 12px 0 18px;font-size:22px;line-height: 30px;}
 .skill-home{
